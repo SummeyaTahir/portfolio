@@ -9,7 +9,7 @@
 
   <body>
     <nav>
-      <ul id="navigation">
+      <ul id="navigation1">
         <li>
           <div><img src="logo.PNG" id="logo"></div>
         </li>
@@ -19,7 +19,29 @@
         <li class="nav_li"><a href="">About Us</a></li>
         <li class="nav_li"><a href="">Projects</a></li>
         <li class="nav_li"><a href="">Contact Us</a></li>
+        <li style=" list-style-type: none;" onclick="opensidebar()" ><img id="menu_png" src="menu.png"></li>
       </ul>
     </nav>
+    <nav>
+    <ul id="navigation2">
+      <li style=" list-style-type: none;"><img  id="cross" onclick="closesidebar()" src="cross-white.png"></li>
+      <li class="Onmobile_nav">
+        <a href="" target="blank">Home</a>
+      </li>
+      <li class="Onmobile_nav"><a href="">About Us</a></li>
+      <li class="Onmobile_nav"><a href="">Projects</a></li>
+      <li class="Onmobile_nav"><a href="">Contact Us</a></li>
+    </ul>
+  </nav>
+  <script>
+      function opensidebar()
+      {
+        document.getElementById("navigation2").style.display="flex";
+      }
+      function closesidebar()
+      {
+        document.getElementById("navigation2").style.display="none";
+      }
+  </script>
   </body>
 </html>
