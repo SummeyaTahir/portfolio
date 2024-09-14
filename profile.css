@@ -112,9 +112,10 @@ body {
       font-size: 1rem;
       height: auto;
     }
-    #chatscreen,#Quran_img
+    #projectimages,#Quran_img
     {
       margin-bottom: 3rem;
+      
     }
    #logoname
     {
@@ -142,8 +143,8 @@ body {
     background-color: rgb(22, 20, 20);
     margin-top: 12vh;
     height: 100%;
-    position: relative; /* Changed from absolute to relative */
-    width: 100%; /* Ensure it takes full width */
+    position: relative; 
+    width: 100%; 
 }
 
   .row
@@ -194,15 +195,22 @@ p{
   height: 90%;
   
 }
+.image-container2 {
+  position: relative;
+  width: 100%;
+  height: 110%;
+  
+}
 
 .image-container #Quran_img {
   width: 100%;
   object-fit: cover; 
   transition: all 0.3s ease-in-out; 
+  
 }
 
 
-.image-container .overlay {
+.image-container .overlay,.image-container2 .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -212,6 +220,7 @@ p{
   backdrop-filter: blur(10px); 
   opacity: 0; 
   display: flex;
+  box-shadow: 1px 2px 14px rgba(228, 215, 227, 0.6); 
   align-items: center;
   justify-content: center;
   color: white;
@@ -220,10 +229,10 @@ p{
   transition: opacity 0.3s ease-in-out; 
 }
 
-.image-container:hover .overlay {
+.image-container:hover .overlay,.image-container2:hover .overlay {
   opacity: 1; 
 }
-#chatscreen
+#projectimages
 {
   width: 100%;
  
@@ -232,6 +241,7 @@ p{
   
  
 }
+
 #name
 {
   list-style-type: none;
