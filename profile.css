@@ -339,7 +339,8 @@ p{
  
   border-radius: 25px;
   width: 90%;
-  height:50vh;
+  height:100%;
+  background: #083d56;
 
 }
 .edu_img
