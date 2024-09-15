@@ -106,12 +106,31 @@ body {
     }
    
   }
-  @media (max-width: 970px) {
+  @media (max-width: 1300px) {
     #navigation1 {
       flex-direction: column;
       font-size: 1rem;
       height: auto;
     }
+    #menu_png {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+  }
+ .nav_li
+    {
+       display: none;
+    }
+    li {
+      padding: 0.5em;
+    }
+
+    
+  }
+ 
+  @media (max-width: 970px) {
+    
     #projectimages,#Quran_img
     {
       margin-bottom: 3rem;
@@ -128,20 +147,7 @@ body {
       position: relative;
     }
     
-    #menu_png {
-      display: block;
-      position: absolute;
-      right: 1rem;
-      top: 1rem;
-  }
- .nav_li
-    {
-       display: none;
-    }
-    li {
-      padding: 0.5em;
-    }
-
+   
     
   }
   .container-fluid {
@@ -202,6 +208,20 @@ p{
   color:rgba(223, 22, 206, 0.8);
   font-size: 1.1em;
   font-weight:400;
+  text-decoration: none;
+  cursor: pointer;
+}
+#side
+{
+  color:white;
+  font-size: 1.1em;
+  font-weight:400;
+  text-decoration: none;
+  cursor: pointer;
+}
+#side:hover
+{
+  color:rgba(223, 22, 206, 0.8);
 }
 #home_content
 {
@@ -350,4 +370,11 @@ p{
    border-radius: 25px;
    box-shadow: 1px 2px 14px rgba(228, 215, 227, 0.6);
    margin-bottom: 5%; 
+}
+#c
+{
+text-decoration: none;color: white;
+}
+#c:hover{
+  color: rgb(223, 85, 223);
 }
