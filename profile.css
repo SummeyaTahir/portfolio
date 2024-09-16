@@ -192,7 +192,7 @@ body {
 {
   color: white;
   font-weight: 500;
-  font-size: 2.3em;
+  font-size: 2.3rem;
   font-family: cursive;
   text-shadow: 2px 2px 4px rgba(228, 215, 227, 0.6); 
   text-align: center;
@@ -356,11 +356,12 @@ p{
 .box
 {
   border:none;
- 
   border-radius: 25px;
-  width: 90%;
+  width: 100%;
+  margin: 7%;
   height:100%;
   background: #083d56;
+  box-shadow: 1px 2px 14px rgba(228, 215, 227, 0.6);
 
 }
 .edu_img
