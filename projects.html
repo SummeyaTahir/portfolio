@@ -3,137 +3,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Web Design</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="profile.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="data.js"></script> <!-- Include shared data -->
+    <script src="project.js"></script> <!-- Include projects script -->
 </head>
-
-<body >
+<body>
     <nav>
-        <ul id="navigation1">
-            <li>
-                <div id="logoname"><img src="logo.PNG" id="logo"><span id="name">SUMMEYA TAHIR</span></div>
-            </li>
-            <li class="nav_li">
-                <a href="home.html">Home</a>
-            </li>
-            <li class="nav_li"><a href="about.html">About </a></li>
-            <li class="nav_li"><a href="projects.html">Projects</a></li>
-            <li class="nav_li"><a href="skills.html">Skills and Experience</a></li>
-            <li class="nav_li"><a href="education.html">Education</a></li>
-            <li class="nav_li"><a href="contact.html">Contact</a></li>
-            <li style="list-style-type: none;" onclick="opensidebar()" ><img id="menu_png" src="menu.png"></li>
-        </ul>
+        <ul id="navigation1"></ul>
     </nav>
-
     <nav>
-        <ul id="navigation2">
-            <li style="list-style-type: none;"><img  id="cross" onclick="closesidebar()" src="cross-white.png"></li>
-            <li style="list-style-type: none;"><a id="side" href="home.html">Home</a></li><hr>
-            <li style="list-style-type: none;"><a id="side" href="about.html">About</a></li><hr>
-            <li style="list-style-type: none;"><a id="side" href="projects.html" >Projects</a></li><hr>
-            <li style="list-style-type: none;"><a id="side" href="skills.html">Skills and Experience</a></li><hr>
-            <li style="list-style-type: none;"><a id="side" href="education.html">Education</a></li><hr>
-            <li style="list-style-type: none;"><a id="side"href="contact.html">Contact</a></li><hr>
-        </ul>
+        <ul id="navigation2"></ul>
     </nav>
-
-   
-    <!-- page2...projects -->
-    <div id="projects_page" class="container-fluid ">
-     
-      <div class="row" id="line_space"></div>
-      
-      <div class="row">
-          <div class="col-12" id="projects_heading">Some of my projects</div>
-      </div>
-      
-      
-      <div class="row" id="line_space"></div>
-     
-      <div class="row">
-          
-          <div class="col-0 col-md-2 col-lg-2"></div>
-         
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-              <div class="image-container">
-              <img id="projectimages" src="chess.jpeg" alt="Quran Project">
-              <div class="overlay"><span >Chess, Shogi-Built multiple board and arcade games, including Chess, Shogi, Snake, Ludo, and Gomoku using C++ and Python, showcasing strategic gameplay mechanics and a variety of user interfaces.</span>
-              </div> </div>
-          </div>
-         
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-            <div class="image-container" >
-            <img id="projectimages" src="ludo.png" alt="Quran Project">
-            <div class="overlay"><span >Ludo- Built  Ludo using C++  showcasing strategic gameplay mechanics and a variety of user interfaces.</span>
-            </div> </div>
-        </div>
-          
-          <div class="col-0 col-md-2 col-lg-2"></div>
-      </div>
-      <div class="row">
-          
-        <div class="col-0 col-md-2 col-lg-2"></div>
-       
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-            <div class="image-container">
-            <img id="Quran_img" src="Quran.jpeg" alt="Quran Project">
-            <div class="overlay"><span >Quranic Insights Website & Quranic Verses API : Developed a comprehensive Quranic Insights website using MongoDB,Html,Css, Node.js, JavaScript to provide in-depth analysis of Quranic verses. The Quranic Verses API, powered by a custom-made Redis Database, delivers fast, efficient retrieval of verses for users and developers alike.</span>
-            </div> </div>
-        </div>
-       
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-          <div class="image-container" >
-          <img id="projectimages" src="chattingscreen.jpg" alt="Quran Project">
-          <div class="overlay"><span >Chatting Screen-Developed a  chatting screen frontend interface using html ,css,javascript to facilitate smooth, live communication between users.</span>
-          </div> </div>
-      </div>
-        
-        <div class="col-0 col-md-2 col-lg-2"></div>
-    </div>
-    
-
-    <div class="row">
-          
-        <div class="col-0 col-md-2 col-lg-2"></div>
-       
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-            <div class="image-container2">
-            <img id="projectimages" src="tic tac toe.PNG" alt="Quran Project">
-            <div class="overlay"><span >Tic Tac Toe-Created a Tic Tac Toe game with simple but effective gameplay, focusing on clean design and logic implementation.Languages used for this are Html,css,javascript.
-
-            </span>
-        </div> </div>
-        </div>
-       
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-          <div class="image-container2" >
-          <img id="projectimages" src="inventory.PNG" alt="Quran Project">
-          <div class="overlay"><span >Inventory Management System-Designed an Inventory Management System using  Html,css,javascript. that tracks stock levels, manages product entries, and ensures smooth operations for inventory-based needs.</span>
-          </div> </div>
-      </div>
-        
-        <div class="col-0 col-md-2 col-lg-2"></div>
-    </div>
-
-    <div class="row" id="line_space"></div>
-      
-  </div>
-    <script>
-       
-        function opensidebar() {
-            document.getElementById("navigation2").style.display = "flex";
-        }
-        function closesidebar() {
-            document.getElementById("navigation2").style.display = "none";
-        }
-        document.addEventListener("DOMContentLoaded", function() {
-            document.body.classList.add('page-transition-active');
-        });
-
-        window.addEventListener("beforeunload", function() {
-            document.body.classList.remove('page-transition-active');
-        });
-    </script>
+    <div id="projects_page" class="container-fluid"></div>
 </body>
 </html>
