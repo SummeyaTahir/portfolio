@@ -58,9 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
     intro.textContent = aboutData.intro;
     aboutMeImage.src = aboutData.imageSrc;
 
-    // Sidebar functions
-    document.getElementById("menu_png").onclick = opensidebar;
-    document.getElementById("cross").onclick = closesidebar;
+    
 
     // Page transition effects
     document.body.classList.add('page-transition-active');
@@ -69,3 +67,9 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.classList.remove('page-transition-active');
     });
 });
+function opensidebar() {
+    document.getElementById("navigation2").style.display = "flex";
+}
+function closesidebar() {
+    document.getElementById("navigation2").style.display = "none";
+}

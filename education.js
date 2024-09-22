@@ -105,3 +105,9 @@ function generateNavigation() {
     `;
     container.appendChild(coursesContainer);
 });
+function opensidebar() {
+    document.getElementById("navigation2").style.display = "flex";
+}
+function closesidebar() {
+    document.getElementById("navigation2").style.display = "none";
+}

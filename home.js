@@ -72,4 +72,9 @@ function generateNavigation() {
   }
   
   document.addEventListener("DOMContentLoaded", initHomePage);
-  
+  function opensidebar() {
+    document.getElementById("navigation2").style.display = "flex";
+}
+function closesidebar() {
+    document.getElementById("navigation2").style.display = "none";
+}

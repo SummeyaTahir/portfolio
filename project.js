@@ -101,4 +101,9 @@ function generateNavigation() {
   }
   
   document.addEventListener("DOMContentLoaded", initProjectsPage);
-  
+  function opensidebar() {
+    document.getElementById("navigation2").style.display = "flex";
+}
+function closesidebar() {
+    document.getElementById("navigation2").style.display = "none";
+}
